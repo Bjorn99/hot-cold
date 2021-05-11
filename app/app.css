@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -176,22 +177,51 @@ h1 {
 }
 
 .btn {
+  padding: 5px;
   position: absolute;
-  transform: translate(50px);
-  background-color: var(--clr-grey-6);
+  transform: translateX(60px);
+  background-color: #f4511e;
   border-radius: 10px;
   align-items: center;
   text-align: center;
-}
-.btn p {
-  text-align: center;
-  align-items: center;
+  width: 120px;
+  cursor: pointer;
   text-transform: uppercase;
-  padding: 10px;
-  margin-bottom: 0;
+  font-size: 18px;
   color: white;
-  transition: 1s;
-  font-weight: bolder;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.btn:active {
+  background-color: #3e8341;
 }
 
 .converter {
@@ -211,6 +241,7 @@ h1 {
 }
 .input #celsius {
   outline: none;
+  font-size: 20px;
   border-style: solid;
   box-sizing: border-box;
   padding-bottom: 5px;
@@ -221,10 +252,23 @@ h1 {
 
 /*display-result*/
 .result {
+  place-items: center;
   background-color: var(--clr-grey-9);
   align-items: center;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+}
+
+.display-result {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  text-align: center;
+  transition: all 2s;
+  font-size: 20px;
+  font-weight: bolder;
 }/*# sourceMappingURL=app.css.map */

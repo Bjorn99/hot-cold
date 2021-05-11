@@ -18,6 +18,7 @@
           <input
             type="text"
             id="celsius"
+            autocomplete="off"
             onkeyup="success()"
             placeholder="Numbers here, please!"
             autofocus
@@ -26,13 +27,13 @@
 
         <div class="button">
           <button class="btn btn-hero" id="convert" disabled>
-            <p>Convert</p>
+            <span>Convert </span>
           </button>
         </div>
       </section>
 
       <div class="result">
-        <h4 id="display-result-0"></h4>
+        <h4 class="display-result" id="display-result-0"></h4>
       </div>
     </main>
 
