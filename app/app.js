@@ -59,7 +59,7 @@ function setInputFilter(textbox, inputFilter) {
 
 /***** PRESS "ENTER" KEY TO TRIGGER BUTTON *****/
 
-var press = submit;
+let press = submit;
 
 press.addEventListener('keyup', function (event) {
   // Number 13 is the "Enter" key on the keyboard
