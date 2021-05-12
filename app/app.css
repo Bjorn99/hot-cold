@@ -76,13 +76,13 @@ body {
     background-color: #3a003f;
   }
   50% {
-    background-color: #138543;
+    background-color: #11743a;
   }
   75% {
-    background-color: #ff01b3;
+    background-color: #8d0765;
   }
   100% {
-    background-color: #f74848;
+    background-color: #c03939;
   }
 }
 
@@ -94,13 +94,13 @@ body {
     background-color: #3a003f;
   }
   50% {
-    background-color: #138543;
+    background-color: #11743a;
   }
   75% {
-    background-color: #ff01b3;
+    background-color: #8d0765;
   }
   100% {
-    background-color: #f74848;
+    background-color: #c03939;
   }
 }
 ul {
@@ -274,6 +274,10 @@ h1 {
   box-sizing: inherit;
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
+  -webkit-animation: lightSpeedInRight;
+          animation: lightSpeedInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .input {
@@ -304,6 +308,8 @@ h1 {
   box-shadow: 10px 10px 10px;
   -webkit-animation: bounce;
           animation: bounce;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
