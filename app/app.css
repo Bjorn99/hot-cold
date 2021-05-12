@@ -274,8 +274,8 @@ h1 {
   box-sizing: inherit;
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
-  -webkit-animation: lightSpeedInRight;
-          animation: lightSpeedInRight;
+  -webkit-animation: bounce;
+          animation: bounce;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
