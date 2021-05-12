@@ -42,6 +42,9 @@ h1 {
   text-align: center;
   padding-right: 4px;
   padding-left: 4px;
+
+  animation: bounce;
+  animation-duration: 2s;
 }
 
 .btn {
@@ -129,6 +132,8 @@ h1 {
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
+  animation: bounce;
+  animation-duration: 2s;
 }
 
 .display-result {
