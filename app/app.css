@@ -56,11 +56,6 @@ html {
 }
 
 body {
-  background: #1d2b64;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f8cdda, #1d2b64);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   font-family: var(--ff-secondary);
   align-items: center;
@@ -68,8 +63,45 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  -webkit-animation: pulse 10s infinite;
+          animation: pulse 10s infinite;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  25% {
+    background-color: #3a003f;
+  }
+  50% {
+    background-color: #138543;
+  }
+  75% {
+    background-color: #ff01b3;
+  }
+  100% {
+    background-color: #f74848;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  25% {
+    background-color: #3a003f;
+  }
+  50% {
+    background-color: #138543;
+  }
+  75% {
+    background-color: #ff01b3;
+  }
+  100% {
+    background-color: #f74848;
+  }
+}
 ul {
   list-style-type: none;
 }
@@ -156,6 +188,7 @@ main {
 }
 
 .header {
+  margin: auto;
   background-color: var(--clr-grey-9);
   box-sizing: border-box;
   border-radius: 10px;

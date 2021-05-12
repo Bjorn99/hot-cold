@@ -30,6 +30,8 @@ function success() {
   }
 }
 
+/***** Show Hidden *****/
+
 /***** INPUT FILTER *****/
 
 function setInputFilter(textbox, inputFilter) {
