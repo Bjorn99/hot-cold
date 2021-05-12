@@ -31,7 +31,6 @@ main {
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
   backdrop-filter: blur(200px);
-  margin: 0 auto;
   padding: 5px;
   text-align: center;
   align-items: center;
@@ -39,7 +38,7 @@ main {
 }
 
 h1 {
-  margin-bottom: 0;
+  margin-bottom: auto;
   text-align: center;
   padding-right: 4px;
   padding-left: 4px;
@@ -60,14 +59,14 @@ h1 {
   color: white;
 }
 
-.button span {
+.btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.btn span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -76,11 +75,11 @@ h1 {
   transition: 0.5s;
 }
 
-.button:hover span {
+.btn:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.btn:hover span:after {
   opacity: 1;
   right: 0;
 }
