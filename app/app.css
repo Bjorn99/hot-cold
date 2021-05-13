@@ -180,10 +180,30 @@ h4 {
   .section-center {
     width: 95vw;
   }
+
+  button {
+    position: relative;
+    align-items: center;
+  }
+
+  .btn {
+    position: relative;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 2rem;
+  }
+
+  button {
+    position: relative;
+    align-items: center;
+  }
+
+  .btn {
+    position: relative;
+    align-items: center;
   }
 }
 main {
@@ -218,10 +238,13 @@ h1 {
           animation-duration: 2s;
 }
 
-.btn {
+.button {
+  padding-top: 20px;
+}
+.button .btn {
   padding: 5px;
   position: absolute;
-  transform: translateX(60px);
+  transform: translate(50%, -50%);
   background-color: #f4511e;
   border: none;
   border-radius: 20px;
