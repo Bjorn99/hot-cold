@@ -17,7 +17,7 @@
         <h1><span>Celsius to fahrenheit</span></h1>
       </section>
 
-      <section class="converter" id="converter">
+      <div class="converter" id="converter">
         <div class="input">
           <input
             type="text"
@@ -34,10 +34,41 @@
             <span>Convert </span>
           </button>
         </div>
-      </section>
+      </div>
 
       <div class="result">
         <h4 class="display-result" id="display-result-0"></h4>
+      </div>
+
+      <hr />
+
+      <!-- fahrenheit to celsius -->
+
+      <section class="header" id="head">
+        <h1><span>fahrenheit to celsius</span></h1>
+      </section>
+
+      <div class="converter" id="converter">
+        <div class="input">
+          <input
+            type="text"
+            id="fahrenheit"
+            autocomplete="off"
+            onkeyup="success()"
+            placeholder="Numbers here, please!"
+            autofocus
+          />
+        </div>
+
+        <div class="button">
+          <button class="btn btn-hero" id="far" disabled>
+            <span>Convert </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="result">
+        <h4 class="display-result" id="display-result-1"></h4>
       </div>
     </main>
 

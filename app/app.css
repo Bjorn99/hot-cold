@@ -145,7 +145,7 @@ p {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -260,7 +260,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #3e8e41;
+  background-color: #490050;
 }
 
 .btn:active {
@@ -282,11 +282,23 @@ h1 {
 }
 
 .input {
+  position: relative;
   box-sizing: border-box;
   padding-bottom: 10px;
+  margin: auto;
   border-radius: 20px;
 }
 .input #celsius {
+  outline: none;
+  font-size: 20px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+}
+.input #fahrenheit {
   outline: none;
   font-size: 20px;
   border-style: solid;
@@ -316,12 +328,20 @@ h1 {
 }
 
 .display-result {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 0;
+  padding-top: 10px;
   align-items: center;
   text-align: center;
   transition: all 2s;
   font-size: 25px;
   font-weight: bolder;
+}
+
+hr {
+  height: 0%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=app.css.map */
