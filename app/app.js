@@ -24,6 +24,15 @@ con.addEventListener('click', function () {
   convertToF(number);
 });
 
+/***** Buttons disabled if input empty *****/
+function success() {
+  if (submit.value === '') {
+    con.disabled = true;
+  } else {
+    con.disabled = false;
+  }
+}
+
 /*****Fahrenheit to Celsius *****/
 function convertToC(fahrenheit) {
   let celsius = (fahrenheit - 32) * (5 / 9);
@@ -42,15 +51,7 @@ far.addEventListener('click', function () {
 });
 
 /***** Buttons disabled if input empty *****/
-function success() {
-  if (submit.value === '') {
-    con.disabled = true;
-  } else {
-    con.disabled = false;
-  }
-}
-
-function success() {
+function success1() {
   if (submit1.value === '') {
     far.disabled = true;
   } else {
