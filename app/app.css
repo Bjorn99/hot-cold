@@ -223,7 +223,8 @@ h1 {
   position: absolute;
   transform: translateX(60px);
   background-color: #f4511e;
-  border-radius: 10px;
+  border: none;
+  border-radius: 20px;
   align-items: center;
   text-align: center;
   width: 120px;
@@ -321,6 +322,6 @@ h1 {
   align-items: center;
   text-align: center;
   transition: all 2s;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bolder;
 }/*# sourceMappingURL=app.css.map */
