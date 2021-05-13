@@ -181,14 +181,14 @@ h4 {
     width: 95vw;
   }
 
-  button {
+  .button {
     position: relative;
     align-items: center;
   }
-
-  .btn {
+  .button .btn {
     position: relative;
     align-items: center;
+    transform: translate(50%, -50%);
   }
 }
 @media screen and (max-width: 500px) {
@@ -196,12 +196,11 @@ h4 {
     font-size: 2rem;
   }
 
-  button {
+  .button {
     position: relative;
     align-items: center;
   }
-
-  .btn {
+  .button .btn {
     position: relative;
     align-items: center;
   }
