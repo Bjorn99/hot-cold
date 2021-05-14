@@ -76,13 +76,11 @@ h1 {
 
 .button {
   padding-top: 20px;
+  align-items: center;
 
   .btn {
     padding: 5px;
     position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(50%, -50%);
-
     background-color: #f4511e;
     border: none;
     border-radius: 20px;
@@ -93,6 +91,7 @@ h1 {
     text-transform: uppercase;
     font-size: 18px;
     color: white;
+    outline: none;
   }
 }
 
@@ -191,7 +190,6 @@ h1 {
 }
 
 .display-result {
-  overflow: scroll;
   margin: 0 auto;
   padding-top: 10px;
   align-items: center;
