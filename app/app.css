@@ -239,7 +239,7 @@ h1 {
 .button .btn {
   padding: 5px;
   position: absolute;
-  background-color: #f4511e;
+  background-color: #067973;
   border: none;
   border-radius: 20px;
   align-items: center;
@@ -282,7 +282,7 @@ h1 {
 }
 
 .btn:active {
-  background-color: #3e8341;
+  background-color: #790808;
 }
 
 .converter {

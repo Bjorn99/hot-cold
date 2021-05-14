@@ -17,7 +17,7 @@ convertToF(6);
 
 con.addEventListener('click', function () {
   console.log('click++');
-  this.style.background = 'green';
+  this.style.background = '#490052';
   let number = submit.value;
   dispElm0.textContent = `${convertToF(number)}°F`;
 
