@@ -10,6 +10,10 @@
   .section-center {
     width: 95vw;
   }
+
+  .converter {
+    align-items: center;
+  }
   .button {
     position: relative;
     align-items: center;
@@ -126,9 +130,11 @@ h1 {
 }
 
 .converter {
+  align-items: center;
+  margin: 1rem;
   backdrop-filter: blur;
   background-color: var(--clr-grey-8);
-  padding: 50px;
+  padding: 30px;
   box-sizing: inherit;
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
@@ -155,6 +161,7 @@ h1 {
   }
 
   #fahrenheit {
+    overflow: hidden;
     outline: none;
     font-size: 20px;
     border-style: solid;
@@ -169,6 +176,7 @@ h1 {
 /*display-result*/
 
 .result {
+  margin: 0 auto;
   place-items: center;
   background-color: var(--clr-grey-9);
   align-items: center;
@@ -183,7 +191,8 @@ h1 {
 }
 
 .display-result {
-  margin-bottom: 0;
+  overflow: scroll;
+  margin: 0 auto;
   padding-top: 10px;
   align-items: center;
   text-align: center;

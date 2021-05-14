@@ -36,15 +36,6 @@ html {
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
-  --ff-primary: 'Roboto', sans-serif;
-  --ff-secondary: 'Open Sans', sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 700px;
 }
 
 *,
@@ -55,8 +46,7 @@ html {
   padding: 0;
 }
 body {
-  display: flex;
-  font-family: var(--ff-secondary);
+  display: grid;
   align-items: center;
   justify-content: center;
   color: var(--clr-grey-1);
@@ -101,10 +91,10 @@ h4 {
   font-family: var(--ff-primary);
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.85rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -118,10 +108,10 @@ p {
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 1.75rem;

@@ -36,15 +36,6 @@ html {
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 700px;
 }
 
 *,
@@ -56,8 +47,7 @@ html {
 }
 
 body {
-  display: flex;
-  font-family: var(--ff-secondary);
+  display: grid;
   align-items: center;
   justify-content: center;
   color: var(--clr-grey-1);
@@ -123,11 +113,11 @@ h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.85rem;
 }
 
 h3 {
@@ -145,11 +135,11 @@ p {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   h3 {
@@ -179,6 +169,10 @@ h4 {
 @media screen and (min-width: 400px) {
   .section-center {
     width: 95vw;
+  }
+
+  .converter {
+    align-items: center;
   }
 
   .button {
@@ -291,10 +285,12 @@ h1 {
 }
 
 .converter {
+  align-items: center;
+  margin: 1rem;
   -webkit-backdrop-filter: blur;
           backdrop-filter: blur;
   background-color: var(--clr-grey-8);
-  padding: 50px;
+  padding: 30px;
   box-sizing: inherit;
   border-radius: 10px;
   box-shadow: 10px 10px 10px;
@@ -322,6 +318,7 @@ h1 {
   text-align: center;
 }
 .input #fahrenheit {
+  overflow: hidden;
   outline: none;
   font-size: 20px;
   border-style: solid;
@@ -334,6 +331,7 @@ h1 {
 
 /*display-result*/
 .result {
+  margin: 0 auto;
   place-items: center;
   background-color: var(--clr-grey-9);
   align-items: center;
@@ -351,7 +349,8 @@ h1 {
 }
 
 .display-result {
-  margin-bottom: 0;
+  overflow: scroll;
+  margin: 0 auto;
   padding-top: 10px;
   align-items: center;
   text-align: center;
